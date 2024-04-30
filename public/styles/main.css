@@ -23,7 +23,18 @@ body {
 
   
   footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     position: absolute;
     bottom: 0;
+  }
+
+  form {
+    width: 50%;
+  }
+
+  .btn {
+    margin: 10px;
   }
   

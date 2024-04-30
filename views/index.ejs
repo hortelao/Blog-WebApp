@@ -1,4 +1,27 @@
 <%- include("partials/header.ejs") %>
 <h1>Home</h1>
 
+<% if(data.length > 0) { %>
+    <%- console.log(data) %>
+    <% data.forEach(element => { %>
+        <div class="card" style="width: 40%; margin: 20px">
+            <div class="card-body">
+              <h5 class="card-title"><%= element.title %></h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary"><%= element.author %></h6>
+              <p class="card-text"><%= element.text %></p>
+              <form action="/edit" method="POST">
+                <input type="text" name="index" value="<%= element.index %>" hidden>
+                <input type="text" name="title" value="<%= element.title %>" hidden>
+                <input type="text" name="author" value="<%= element.author %>" hidden>
+                <input type="text" name="text" value="<%= element.text %>" hidden>
+                <button type="submit" class="btn btn-warning">Edit</button>
+            </form>
+              
+            </div>
+            
+        </div>
+    <% }); %>
+<% } else { %>
+    <h1>There's no Post's to show</h1>
+<% } %>
 <%- include("partials/footer.ejs") %>

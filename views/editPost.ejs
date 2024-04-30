@@ -1,0 +1,20 @@
+<%- include("partials/header.ejs") %>
+    <h1>Edit a Post</h1>
+    <form action="/savePost" method="POST">
+        <input type="text" class="form-control" id="index" name="index" aria-describedby="emailHelp" value="<%= index %>" hidden>
+        <div class="mb-3 row">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" class="form-control" id="title" name="title" aria-describedby="emailHelp" value="<%= title %>">
+        </div>
+        <div class="mb-3 row">
+            <label for="author" class="form-label">Author</label>
+            <input type="text" class="form-control" id="author" name="author" value="<%= author %>">
+        </div>
+        <div class="form-floating row">
+            <label for="floatingTextarea">Blog Text</label>
+            <textarea class="form-control" placeholder="Your blog post text" id="floatingTextarea" name="text"><%= text %></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+<%- include("partials/footer.ejs") %>
