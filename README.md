@@ -1,6 +1,6 @@
-# Express Blog
+# Blog Web-App
 
-Express Blog is a simple blog application built using Node.js, Express, EJS, and Body Parser. It allows users to create, read, update, and delete blog posts.
+Blog Web-App is a simple blog application built using Node.js, Express, EJS, and Body Parser. It allows users to create, read, update, and delete blog posts.
 
 ## Features
 
