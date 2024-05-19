@@ -25,7 +25,7 @@ Blog Web-App is a simple blog application built using Node.js, Express, EJS, and
 ## Deployment
 
 This project is deployed on Render. You can access it [here](https://blog-webapp-e1nh.onrender.com/).
-NOTE: It may take a minute to display the page due to limitations of Free Tier on Render.
+<br>NOTE: It may take a minute to display the page due to limitations of Free Tier on Render.
 
 ## Dependencies
 
